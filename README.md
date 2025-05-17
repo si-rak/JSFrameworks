@@ -42,7 +42,7 @@ It uses the **Noroff API** to fetch live products and simulates a shopping exper
 
 ```bash
 git clone https://github.com/si-rak/ecom-store-js-frameworks-course-assignment.git
-cd your-repo-name
+cd online-shop
 npm install
 npm start
 ```
