@@ -1,0 +1,36 @@
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fdfdfd;
+}
+
+
+.cartItem strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.cartItem span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: right;
+  margin-top: 2rem;
+}
