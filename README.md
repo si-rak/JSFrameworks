@@ -25,11 +25,11 @@ It uses the **Noroff API** to fetch live products and simulates a shopping exper
 
 ## Live Demo
 
-[View site on Netlify] https://ecom-store-js-frameworks.netlify.app/
+[View site on Netlify](https://ecom-store-js-frameworks.netlify.app)
 
 ## GitHub Repository
 
-[View the code on GitHub] https://github.com/si-rak/ecom-store-js-frameworks-course-assignment
+[View the code on GitHub](https://github.com/si-rak/ecom-store-js-frameworks-course-assignment)
 
 ## Contact Form Validation Rules
 
@@ -38,11 +38,12 @@ It uses the **Noroff API** to fetch live products and simulates a shopping exper
 - Email: valid email address
 - Message: minimum 3 characters
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/si-rak/ecom-store-js-frameworks-course-assignment.git
 cd online-shop
 npm install
 npm start
+
 ```
