@@ -47,3 +47,11 @@ npm install
 npm start
 
 ```
+
+---
+
+### Acknowledgement
+
+Thanks to our teacher **Martin** for the support and to **Noroff course materials** for helpful theory.  
+I adapted some structure from this video: [YouTube](https://youtu.be/054qYbsxyXw?si=4MmrgCzNIloRdTVV)  
+I also asked **ChatGPT** for help when stuck or to clarify concepts.
