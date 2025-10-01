@@ -38,6 +38,14 @@ It uses the **Noroff API** to fetch live products and simulates a shopping exper
 - Email: valid email address
 - Message: minimum 3 characters
 
+## Requirements
+
+- [Node.js](https://nodejs.org/) **v20 (LTS recommended)**  
+- npm (comes bundled with Node.js)
+
+> The project may also work on newer Node.js versions (e.g. v22), but v20 LTS is the recommended and tested version.
+
+
 ## Installation
 
 ```bash
