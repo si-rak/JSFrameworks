@@ -42,7 +42,7 @@ It uses the **Noroff API** to fetch live products and simulates a shopping exper
 
 ```bash
 git clone https://github.com/si-rak/JSFrameworks.git
-cd online-shop
+cd JSFrameworks
 npm install
 npm start
 
