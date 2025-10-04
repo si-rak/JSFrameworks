@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { CartContext } from '../cart/cartState';
+import { CartContext } from '../../cart/cartState';
 import { useNavigate } from 'react-router-dom';
 import styles from './CartPage.module.css';
-import btnStyles from '../components/Button.module.css';
+import btnStyles from '../../components/Button.module.css';
 
 function CartPage() {
   const { cartItems, clearCart } = useContext(CartContext);
@@ -16,7 +16,7 @@ function CartPage() {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={`pageContainer ${styles.container}`}>
       <h2>Your Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
@@ -46,9 +46,20 @@ function CartPage() {
 
           <p className={styles.total}>Total: ${total.toFixed(2)}</p>
 
-          <button className={btnStyles.greenButton} onClick={handleCheckout}>
-            Checkout
-          </button>
+          <div style={{ display: 'flex', gap: '1rem' }}>
+            <button
+              className={`${btnStyles.button} ${btnStyles.greenButton}`}
+              onClick={handleCheckout}
+            >
+              Checkout
+            </button>
+            <button
+              className={`${btnStyles.button} ${btnStyles.dangerButton}`}
+              onClick={clearCart}
+            >
+              Clear Cart
+            </button>
+          </div>
         </div>
       )}
     </div>

@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
+import btnStyles from '../../components/Button.module.css';
 
 function HomePage() {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState('');
+  const [filterDiscounted, setFilterDiscounted] = useState(false);
 
   useEffect(() => {
     async function fetchProducts() {
@@ -16,18 +18,28 @@ function HomePage() {
         console.error('Error fetching products:', error);
       }
     }
-
     fetchProducts();
   }, []);
 
-  const filteredProducts = products.filter((product) =>
-    product.title.toLowerCase().includes(search.toLowerCase())
-  );
+  // Filtering logic (by name + optional discounted products)
+  const filteredProducts = products.filter((product) => {
+    const matchesName = product.title
+      .toLowerCase()
+      .includes(search.toLowerCase());
+
+    const isDiscounted =
+      product.price && product.discountedPrice < product.price;
+
+    const matchesDiscount = filterDiscounted ? isDiscounted : true;
+
+    return matchesName && matchesDiscount;
+  });
 
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>All Products</h2>
 
+      {/* Search by name */}
       <input
         type="text"
         placeholder="Search products..."
@@ -36,6 +48,17 @@ function HomePage() {
         className={styles.search}
       />
 
+      {/* Outline filter button */}
+      <div style={{ margin: '1rem 0' }}>
+        <button
+          className={`${btnStyles.button} ${btnStyles.outlineButton}`}
+          onClick={() => setFilterDiscounted(!filterDiscounted)}
+        >
+          {filterDiscounted ? 'Show All Products' : 'Show Discounted Products'}
+        </button>
+      </div>
+
+      {/* Products grid */}
       <div className={styles.grid}>
         {filteredProducts.map((product) => (
           <div key={product.id}>

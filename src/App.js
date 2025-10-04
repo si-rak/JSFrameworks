@@ -1,10 +1,12 @@
-import CheckoutSuccessPage from './pages/CheckoutSuccessPage';
-import CartPage from './pages/CartPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ProductPage from './pages/ProductPage';
-import ContactPage from './pages/ContactPage';
 import Layout from './components/Layout';
+
+// Updated imports to point to the correct files
+import CheckoutSuccessPage from './pages/CheckoutSuccessPage/CheckoutSuccessPage';
+import CartPage from './pages/CartPage/CartPage';
+import HomePage from './pages/HomePage/HomePage';
+import ProductPage from './pages/ProductPage/ProductPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 
 function App() {
   return (

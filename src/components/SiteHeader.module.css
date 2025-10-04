@@ -1,0 +1,79 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #f0f0f5;
+  padding: 0.5rem 1rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.hamburgerBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  display: none;
+  /* hidden on desktop */
+}
+
+/* Nav links default (desktop) */
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+
+.cartWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hamburgerBtn {
+    display: block;
+    /* visible on mobile */
+  }
+
+  .nav {
+    display: none;
+    /* hidden on mobile until toggled */
+    flex-direction: column;
+    gap: 0.75rem;
+    background: #f8f8f8;
+    position: absolute;
+    top: 60px;
+    /* below header */
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .nav.open {
+    display: flex;
+    /* shown when hamburger toggled */
+  }
+}

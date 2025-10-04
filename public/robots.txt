@@ -1,3 +1,10 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for MyShop
+# More info: https://www.robotstxt.org/
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Block sensitive routes (example)
+Disallow: /cart
+Disallow: /checkout
+Disallow: /checkout-success

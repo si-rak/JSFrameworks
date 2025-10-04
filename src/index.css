@@ -1,4 +1,6 @@
-/* Global reset */
+/* ====================== */
+/* Global reset           */
+/* ====================== */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +21,6 @@ body {
   padding: 0;
 }
 
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -27,64 +28,15 @@ code {
 
 .site-logo {
   height: auto;
-  max-height: 60px;
+  max-height: 50px;
   width: auto;
   display: block;
   object-fit: contain;
 }
 
-@media (max-width: 360px) {
-  .site-logo {
-    max-height: 40px;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .site-logo {
-    max-height: 80px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .site-logo {
-    max-height: 100px;
-  }
-}
-
-
-@media (max-width: 360px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    font-size: 0.8rem;
-
-  }
-}
-
-@media (max-width: 400px) {
-  header {
-    padding: 0.5rem 1rem;
-    flex-direction: column;
-    row-gap: 0.5rem;
-  }
-
-  nav {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-}
-
+/* ====================== */
+/* CART WRAPPER           */
+/* ====================== */
 .cart-wrapper {
   flex: 1;
   display: flex;
@@ -95,5 +47,62 @@ code {
   .cart-wrapper {
     justify-content: center;
     margin-top: 0.5rem;
+  }
+}
+
+/* ====================== */
+/* GLOBAL PAGE CONTAINER  */
+/* ====================== */
+.pageContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* center vertically when content is short */
+  min-height: calc(100vh - 160px);
+  /* screen height minus header (~80px) and footer (~80px) */
+  padding: 2rem 1rem;
+  /* ✅ add controlled padding so top/bottom are not huge */
+}
+
+@media (max-width: 600px) {
+  .pageContainer {
+    padding: 1.5rem 1rem;
+    /* slightly less padding on small screens */
+  }
+}
+
+
+/* ====================== */
+/* RESPONSIVE LOGO / NAV  */
+/* ====================== */
+@media (max-width: 360px) {
+  .site-logo {
+    max-height: 40px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-logo {
+    max-height: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-logo {
+    max-height: 100px;
   }
 }

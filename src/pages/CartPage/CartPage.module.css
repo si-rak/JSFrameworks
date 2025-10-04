@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.total {
+  font-weight: bold;
+  margin: 1rem 0;
+}

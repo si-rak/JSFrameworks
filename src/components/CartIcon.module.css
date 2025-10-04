@@ -1,0 +1,31 @@
+.wrapper {
+  position: relative;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #ff3b3b;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  padding: 2px 5px;
+  font-weight: bold;
+  min-width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
