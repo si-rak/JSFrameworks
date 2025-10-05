@@ -26,14 +26,15 @@ This project was created as part of the _JavaScript Frameworks_ course in the **
 
 ## 🖼️ Screenshots
 
-**Homepage**  
-![Homepage Screenshot](./screenshots/homepage.png)
+<div align="center">
 
-**Cart Page**  
-![Cart Page Screenshot](./screenshots/cart.png)
+### 🏠 Homepage | 🛒 Cart Page | 🎉 Checkout Success
 
-**Checkout Success**  
-![Checkout Success Screenshot](./screenshots/checkout.png)
+<img src="./screenshots/homepage.png" width="31%" />
+<img src="./screenshots/cart.png" width="31%" />
+<img src="./screenshots/checkout.png" width="31%" />
+
+</div>
 
 ---
 
