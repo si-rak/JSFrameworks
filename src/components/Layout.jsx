@@ -24,7 +24,6 @@ function Layout({ children }) {
           display: 'flex',
         }}
       >
-        {/* Only wrap non-home pages in pageContainer */}
         {isHomePage ? (
           children
         ) : (

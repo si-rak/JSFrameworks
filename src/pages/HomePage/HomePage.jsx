@@ -21,7 +21,6 @@ function HomePage() {
     fetchProducts();
   }, []);
 
-  // Filtering logic (by name + optional discounted products)
   const filteredProducts = products.filter((product) => {
     const matchesName = product.title
       .toLowerCase()
@@ -39,7 +38,6 @@ function HomePage() {
     <div className={styles.container}>
       <h2 className={styles.title}>All Products</h2>
 
-      {/* Search by name */}
       <input
         type="text"
         placeholder="Search products..."
@@ -48,7 +46,6 @@ function HomePage() {
         className={styles.search}
       />
 
-      {/* Outline filter button */}
       <div style={{ margin: '1rem 0' }}>
         <button
           className={`${btnStyles.button} ${btnStyles.outlineButton}`}
@@ -58,7 +55,6 @@ function HomePage() {
         </button>
       </div>
 
-      {/* Products grid */}
       <div className={styles.grid}>
         {filteredProducts.map((product) => (
           <div key={product.id}>

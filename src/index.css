@@ -1,6 +1,4 @@
-/* ====================== */
-/* Global reset           */
-/* ====================== */
+/* Global reset  */
 * {
   margin: 0;
   padding: 0;
@@ -26,17 +24,53 @@ code {
     monospace;
 }
 
-.site-logo {
-  height: auto;
-  max-height: 50px;
-  width: auto;
-  display: block;
-  object-fit: contain;
+/* TYPOGRAPHY (global) */
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
 }
 
-/* ====================== */
-/* CART WRAPPER           */
-/* ====================== */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/* LOGO */
+.site-logo {
+  height: auto;
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Small devices */
+@media (max-width: 400px) {
+  .site-logo {
+    max-height: 100px;
+  }
+}
+
+/* Medium screens (tablets / small laptops) */
+@media (min-width: 401px) and (max-width: 1199px) {
+  .site-logo {
+    max-height: 115px;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .site-logo {
+    max-height: 130px;
+  }
+}
+
+
+/* CART WRAPPER */
 .cart-wrapper {
   flex: 1;
   display: flex;
@@ -50,41 +84,29 @@ code {
   }
 }
 
-/* ====================== */
-/* GLOBAL PAGE CONTAINER  */
-/* ====================== */
+
+/* GLOBAL PAGE CONTAINER */
 .pageContainer {
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* center vertically when content is short */
   min-height: calc(100vh - 160px);
-  /* screen height minus header (~80px) and footer (~80px) */
   padding: 2rem 1rem;
-  /* ✅ add controlled padding so top/bottom are not huge */
 }
 
 @media (max-width: 600px) {
   .pageContainer {
     padding: 1.5rem 1rem;
-    /* slightly less padding on small screens */
   }
 }
 
 
-/* ====================== */
-/* RESPONSIVE LOGO / NAV  */
-/* ====================== */
+/* RESPONSIVE NAV */
 @media (max-width: 360px) {
-  .site-logo {
-    max-height: 40px;
-  }
-
   nav {
     flex-direction: column;
     align-items: center;
@@ -92,17 +114,5 @@ code {
 
   nav a {
     font-size: 0.8rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .site-logo {
-    max-height: 80px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .site-logo {
-    max-height: 100px;
   }
 }

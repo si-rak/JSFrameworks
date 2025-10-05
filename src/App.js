@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 
-// Updated imports to point to the correct files
 import CheckoutSuccessPage from './pages/CheckoutSuccessPage/CheckoutSuccessPage';
 import CartPage from './pages/CartPage/CartPage';
 import HomePage from './pages/HomePage/HomePage';

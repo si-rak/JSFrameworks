@@ -19,6 +19,10 @@
   align-items: center;
 }
 
+.logo img {
+  margin-right: 1rem;
+}
+
 .hamburgerBtn {
   background: none;
   border: none;
@@ -26,10 +30,8 @@
   cursor: pointer;
   color: #333;
   display: none;
-  /* hidden on desktop */
 }
 
-/* Nav links default (desktop) */
 .nav {
   display: flex;
   gap: 1rem;
@@ -47,24 +49,22 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  margin-right: 1rem;
 }
 
-/* Mobile adjustments */
+
 @media (max-width: 768px) {
   .hamburgerBtn {
     display: block;
-    /* visible on mobile */
   }
 
   .nav {
     display: none;
-    /* hidden on mobile until toggled */
     flex-direction: column;
     gap: 0.75rem;
     background: #f8f8f8;
     position: absolute;
     top: 60px;
-    /* below header */
     left: 0;
     right: 0;
     padding: 1rem;
@@ -74,6 +74,5 @@
 
   .nav.open {
     display: flex;
-    /* shown when hamburger toggled */
   }
 }

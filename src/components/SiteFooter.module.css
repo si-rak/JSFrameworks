@@ -1,6 +1,5 @@
 .footer {
   padding: 1rem 2rem;
-  /* reduced vertical padding */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -35,7 +34,6 @@
     align-items: center;
     text-align: center;
     padding: 1rem;
-    /* tighter on mobile */
   }
 
   .footerContact {

@@ -1,54 +1,57 @@
-/* Base button styles */
 .button {
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
   display: inline-block;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Green action button (positive actions: add, checkout, submit) */
-.greenButton {
-  background-color: #28a745;
-  color: white;
-}
-
-.greenButton:hover {
-  background-color: #218838;
-}
-
-/* Blue button (primary links/navigation) */
-.blueButton {
-  background-color: #007bff;
-  color: white;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
 }
 
-.blueButton:hover {
-  background-color: #0056b3;
+.greenButton {
+  background-color: #22c55e;
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Outline button (neutral/secondary actions) */
+.greenButton:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+}
+
 .outlineButton {
-  background-color: transparent;
-  color: #555;
-  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #444;
+  border: 2px solid #ddd;
 }
 
 .outlineButton:hover {
-  border-color: #999;
-  color: #000;
+  border-color: #bbb;
+  color: #222;
+  transform: translateY(-2px);
 }
 
-
-/* Danger button (destructive actions: clear, delete, remove) */
 .dangerButton {
   background-color: #dc3545;
-  color: white;
+  color: #fff;
+  border: none;
 }
 
 .dangerButton:hover {
   background-color: #b02a37;
+  transform: translateY(-2px);
+}
+
+.blueButton {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blueButton:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
 }

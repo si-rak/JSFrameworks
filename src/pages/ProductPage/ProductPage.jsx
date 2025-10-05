@@ -36,7 +36,7 @@ function ProductPage() {
         <p>{product.description}</p>
         <p className={styles.price}>Price: ${product.discountedPrice}</p>
 
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+        <div className={styles.actions}>
           <button
             className={`${btnStyles.button} ${btnStyles.greenButton}`}
             onClick={() => addToCart(product)}
@@ -44,7 +44,6 @@ function ProductPage() {
             Add to Cart
           </button>
 
-          {/* Back to Products - less prominent */}
           <Link
             to="/"
             className={`${btnStyles.button} ${btnStyles.outlineButton}`}
