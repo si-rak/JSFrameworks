@@ -1,8 +1,7 @@
 # 🛍️ MyShop – React eCommerce Store
 
 [![React](https://img.shields.io/badge/React-19.0-blue?logo=react)](https://react.dev/)
-[![Netlify](https://sirakshop.netlify.app)
-](https://ecom-store-js-frameworks.netlify.app)
+[![Netlify Status](https://img.shields.io/badge/Deployed%20on-Netlify-brightgreen?logo=netlify)](https://sirakshop.netlify.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-v20-blue?logo=node.js)](https://nodejs.org/)
 
