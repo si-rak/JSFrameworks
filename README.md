@@ -80,18 +80,21 @@ screenshots/             # README images
 
 ## ⚙️ Installation
 
-```bash
-# Clone the repo
-git clone https://github.com/si-rak/JSFrameworks.git
+Clone the repository and set up the project locally with the following commands:
 
-# Navigate to folder
-cd JSFrameworks
+```bash
+# Clone the repository
+git clone https://github.com/si-rak/jsfworks.git
+
+# Navigate to the project folder
+cd jsfw
 
 # Install dependencies
 npm install
 
-# Start local dev server
+# Start the local development server
 npm start
+
 ```
 
 Requires Node.js v20 (LTS recommended)
