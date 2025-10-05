@@ -28,11 +28,18 @@ This project was created as part of the _JavaScript Frameworks_ course in the **
 
 <div align="center">
 
-### 🏠 Homepage | 🛒 Cart Page | 🎉 Checkout Success
-
-<img src="./screenshots/homepage.png" width="31%" />
-<img src="./screenshots/cart.png" width="31%" />
-<img src="./screenshots/checkout.png" width="31%" />
+<table>
+  <tr>
+    <td align="center"><b>🏠 Homepage</b></td>
+    <td align="center"><b>🛒 Cart Page</b></td>
+    <td align="center"><b>🎉 Checkout Success</b></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/homepage.png" width="95%" style="border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.15);" /></td>
+    <td><img src="./screenshots/cart.png" width="95%" style="border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.15);" /></td>
+    <td><img src="./screenshots/checkout.png" width="95%" style="border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.15);" /></td>
+  </tr>
+</table>
 
 </div>
 
@@ -55,19 +62,18 @@ This project was created as part of the _JavaScript Frameworks_ course in the **
 
 ```text
 src/
-├── assets/              # Static media (logos, images)
-├── cart/                # Context & reducer logic for cart
-├── components/          # Reusable UI components (Header, Footer, Buttons)
-├── pages/               # Page-level components
-│   ├── HomePage/
-│   ├── ProductPage/
-│   ├── CartPage/
-│   ├── CheckoutSuccessPage/
-│   └── ContactPage/
-├── utils/               # Utility functions & tests
+├── assets/              # Static images and logos
+├── cart/                # Cart context and reducer logic
+├── components/          # Reusable UI components
+├── pages/               # Page-level components (Home, Product, Cart, etc.)
+├── utils/               # Utility functions and tests
 ├── App.js               # App routes
-├── index.js             # React root with CartProvider
+├── index.js             # Root render with CartProvider
 └── index.css            # Global styles
+
+public/                  # Public assets and base HTML
+screenshots/             # README images
+
 ```
 
 ---
@@ -119,8 +125,8 @@ Tested successfully on Node v20 and npm 10+
 Frontend Developer Student @ Noroff
 
 - 🧑‍💻 [GitHub](https://github.com/si-rak)
-- 💼 [LinkedIn](https://linkedin.com/in/yourprofile)
-- 🌐 [Portfolio](https://your-portfolio-link.com)
+- 💼 [LinkedIn](https://linkedin.com)
+- 🌐 [Portfolio](https://portfolio-link.com)
 
 ---
 
