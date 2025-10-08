@@ -129,7 +129,7 @@ a:hover {
   }
 }
 
-/* 🛒 CART WRAPPER */
+/* CART WRAPPER */
 .cart-wrapper {
   flex: 1;
   display: flex;
@@ -143,7 +143,7 @@ a:hover {
   }
 }
 
-/* PAGE CONTAINER (SINGLE FRAME ONLY) */
+/* PAGE CONTAINER */
 .pageContainer {
   max-width: 1000px;
   margin: 2rem auto;

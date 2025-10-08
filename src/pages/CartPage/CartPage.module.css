@@ -140,7 +140,6 @@
   }
 }
 
-/* DARK THEME ADJUSTMENTS */
 [data-theme="dark"] .cartItem {
   background: var(--card-bg);
   border-color: var(--border-color);

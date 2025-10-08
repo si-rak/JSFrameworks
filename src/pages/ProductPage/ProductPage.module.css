@@ -122,7 +122,6 @@
   }
 }
 
-/* DARK MODE VARIANT */
 [data-theme="dark"] .container img {
   border: 1px solid var(--border-color);
   box-shadow: 0 6px 18px rgba(255, 255, 255, 0.04);

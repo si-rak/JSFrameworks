@@ -7,7 +7,6 @@ function Layout({ children, toggleTheme, theme }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
-  // detect homepage
   const isHomePage = location.pathname === '/';
 
   return (

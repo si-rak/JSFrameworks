@@ -10,7 +10,6 @@ import ContactPage from './pages/ContactPage/ContactPage';
 
 function App() {
   const [theme, setTheme] = useState(() => {
-    // Load saved theme or default to light
     return localStorage.getItem('theme') || 'light';
   });
 
