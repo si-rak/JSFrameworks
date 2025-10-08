@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
 
 import CheckoutSuccessPage from './pages/CheckoutSuccessPage/CheckoutSuccessPage';
@@ -8,9 +9,23 @@ import ProductPage from './pages/ProductPage/ProductPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    // Load saved theme or default to light
+    return localStorage.getItem('theme') || 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <Router>
-      <Layout>
+      <Layout toggleTheme={toggleTheme} theme={theme}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/product/:id" element={<ProductPage />} />

@@ -7,8 +7,14 @@ function CartIcon() {
   const { cartItems } = useContext(CartContext);
 
   return (
-    <Link to="/cart" className={styles.wrapper}>
-      <i className={`fa-solid fa-cart-shopping ${styles.icon}`}></i>
+    <Link to="/cart" className={styles.wrapper} aria-label="Cart">
+      <i
+        className={`fa-solid fa-cart-shopping ${styles.icon}`}
+        style={{
+          color: 'var(--text-color)',
+          transition: 'color 0.3s ease',
+        }}
+      ></i>
       {cartItems.length > 0 && (
         <span className={styles.badge}>{cartItems.length}</span>
       )}

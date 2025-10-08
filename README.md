@@ -1,11 +1,26 @@
+<p align="center">
+  <img src="./banner.svg" alt="MyShop React eCommerce Store Banner" width="100%" />
+</p>
+
 # 🛍️ MyShop – React eCommerce Store
 
-[![React](https://img.shields.io/badge/React-19.0-blue?logo=react)](https://react.dev/)
-[![Netlify Status](https://img.shields.io/badge/Deployed%20on-Netlify-brightgreen?logo=netlify)](https://sirakshop.netlify.app)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Node.js](https://img.shields.io/badge/Node.js-v20-blue?logo=node.js)](https://nodejs.org/)
+<p align="left">
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React Badge" />
+  </a>
+  <a href="https://sirakshop.netlify.app">
+    <img src="https://img.shields.io/badge/Deployed_on-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify Badge" />
+  </a>
+  <a href="https://nodejs.org/">
+    <img src="https://img.shields.io/badge/Node.js-v20-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js Badge" />
+  </a>
+  <a href="./LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License Badge" />
+  </a>
+  <img src="https://img.shields.io/badge/Project%20Type-JS%20Frameworks%20Assignment-blue?style=for-the-badge" alt="Project Type Badge" />
+</p>
 
-A modern, responsive eCommerce frontend built with **React**, designed to simulate a real shopping experience using the **Noroff Online Shop API**.  
+A modern, responsive **eCommerce frontend** built with **React**, designed to simulate a real shopping experience using the **Noroff Online Shop API**.  
 This project was created as part of the _JavaScript Frameworks_ course in the **Frontend Development program at Noroff**, focusing on reusable components, responsive UI, and clean architecture.
 
 ---

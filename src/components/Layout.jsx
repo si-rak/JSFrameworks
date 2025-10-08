@@ -3,7 +3,7 @@ import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import { useLocation } from 'react-router-dom';
 
-function Layout({ children }) {
+function Layout({ children, toggleTheme, theme }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -12,9 +12,21 @@ function Layout({ children }) {
 
   return (
     <div
-      style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: 'var(--bg-color)',
+        color: 'var(--text-color)',
+        transition: 'background-color 0.3s ease, color 0.3s ease',
+      }}
     >
-      <SiteHeader menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <SiteHeader
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        toggleTheme={toggleTheme}
+        theme={theme}
+      />
 
       <main
         style={{

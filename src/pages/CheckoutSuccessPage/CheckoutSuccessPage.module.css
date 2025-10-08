@@ -7,7 +7,7 @@
 .title {
   font-size: 2rem;
   font-weight: 700;
-  color: #22c55e;
+  color: var(--accent-color);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -18,13 +18,27 @@
 .checkmark {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #22c55e;
+  color: var(--accent-color);
   line-height: 1;
 }
 
 .message {
   font-size: 1.125rem;
-  color: #444;
+  color: var(--text-color);
   font-weight: 400;
   margin-bottom: 2rem;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
