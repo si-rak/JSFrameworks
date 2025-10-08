@@ -17,7 +17,9 @@
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License Badge" />
   </a>
-  <img src="https://img.shields.io/badge/Project%20Type-JS%20Frameworks%20Assignment-blue?style=for-the-badge" alt="Project Type Badge" />
+  <a href="https://github.com/si-rak/jsfw">
+    <img src="https://img.shields.io/badge/Project%20Type-JS%20Frameworks%20Assignment-blue?style=for-the-badge" alt="Project Type Badge" />
+  </a>
 </p>
 
 A modern, responsive **eCommerce frontend** built with **React**, designed to simulate a real shopping experience using the **Noroff Online Shop API**.  
