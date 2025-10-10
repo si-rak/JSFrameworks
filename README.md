@@ -168,7 +168,7 @@ Some refinements were made with help from **ChatGPT**, used for learning and tro
 
 ## 🌐 Live Demo
 
-[🟢 View Site on Netlify](https://ecom-store-js-frameworks.netlify.app)
+[🟢 View Site on Netlify](https://jsfw-react-myshop.netlify.app/)
 
 ## 💻 GitHub Repository
 
