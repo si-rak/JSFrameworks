@@ -101,7 +101,7 @@ Clone the repository and set up the project locally with the following commands:
 
 ```bash
 # Clone the repository
-git clone https://github.com/si-rak/jsfworks.git
+git clone https://github.com/si-rak/jsfw-react-myshop.git
 
 # Navigate to the project folder
 cd jsfw
@@ -172,4 +172,4 @@ Some refinements were made with help from **ChatGPT**, used for learning and tro
 
 ## 💻 GitHub Repository
 
-[📂 View Source Code on GitHub](https://github.com/si-rak/ecom-store-js-frameworks-course-assignment)
+[📂 View Source Code on GitHub](https://github.com/si-rak/jsfw-react-myshop.git)
