@@ -145,8 +145,8 @@ Tested successfully on Node v20 and npm 10+
 Frontend Developer Student @ Noroff
 
 - 🧑‍💻 [GitHub](https://github.com/si-rak)
-- 💼 [LinkedIn](https://linkedin.com)
-- 🌐 [Portfolio](https://portfolio-link.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/sirak-getachew-583747240/)
+- 🌐 [Portfolio](https://sirak-portfolio.netlify.app/)
 
 ---
 
